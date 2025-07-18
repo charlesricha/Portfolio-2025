@@ -36,7 +36,7 @@ const Experience = () => {
       <h2 className="text-3xl md:text-5xl font-bold font-headline mb-12 text-center">
         Work Experience
       </h2>
-      <div className="relative">
+      <div className="relative md:w-[70%] md:mx-auto">
         <div className="absolute left-2.5 top-2 h-full w-1 bg-border -translate-x-1/2"></div>
         <ol>
           {experiences.map((experience, index) => (
