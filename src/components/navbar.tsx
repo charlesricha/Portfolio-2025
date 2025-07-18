@@ -48,7 +48,7 @@ const Navbar = () => {
         >
           <Code className="w-8 h-8 text-primary" />
           <p className="text-lg font-bold cursor-pointer font-headline">
-            CharlesFolio
+            Charles
           </p>
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
