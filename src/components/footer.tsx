@@ -4,7 +4,7 @@ import { Button } from './ui/button';
 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-primary-foreground py-8">
+    <footer className="bg-background border-t border-border text-foreground py-8">
       <div className="max-w-7xl mx-auto px-6 sm:px-16 flex flex-col md:flex-row justify-between items-center gap-4">
         <p>&copy; {new Date().getFullYear()} EtherealFolio. All rights reserved.</p>
         <div className="flex gap-2">
