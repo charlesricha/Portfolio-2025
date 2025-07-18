@@ -1,12 +1,12 @@
 import React from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
+import { ArrowLeft } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 import { projects } from '@/lib/constants';
-import { Github, ExternalLink, ChevronRight } from 'lucide-react';
-import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription } from './ui/card';
-import { Badge } from './ui/badge';
-import { Button } from './ui/button';
-import Section from './section';
+import Image from 'next/image';
+import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { Github, ExternalLink } from 'lucide-react';
 
 const ProjectCard = ({ project }: { project: (typeof projects)[0] }) => {
   return (
@@ -41,32 +41,30 @@ const ProjectCard = ({ project }: { project: (typeof projects)[0] }) => {
   );
 };
 
-const Projects = () => {
+const AllProjectsPage = () => {
   return (
-    <Section id="projects" className="animate-in fade-in-0 slide-in-from-bottom-12 duration-1000">
-      <h2 className="text-3xl md:text-5xl font-bold font-headline mb-4">
-        My Projects
-      </h2>
-      <p className="text-lg text-muted-foreground mb-12 max-w-3xl">
-        Following projects showcases my skills and experience through
-        real-world examples of my work. Each project is briefly described with
-        links to code repositories and live demos in it.
-      </p>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {projects.slice(0, 3).map((project, index) => (
-          <ProjectCard key={`project-${index}`} project={project} />
-        ))}
-      </div>
-      <div className="mt-12 text-center">
-        <Button asChild variant="outline">
-          <Link href="/projects">
-            View All Projects
-            <ChevronRight className="ml-2 h-4 w-4" />
-          </Link>
-        </Button>
-      </div>
-    </Section>
+    <div className="bg-background min-h-screen">
+      <main className="max-w-7xl mx-auto px-6 sm:px-16 py-16 sm:py-24">
+        <div className="flex items-center mb-12">
+          <Button asChild variant="ghost">
+            <Link href="/#projects">
+              <ArrowLeft className="mr-2 h-4 w-4" />
+              Back to Home
+            </Link>
+          </Button>
+        </div>
+        <h1 className="text-4xl md:text-6xl font-bold font-headline mb-4 text-center">All Projects</h1>
+        <p className="text-lg text-muted-foreground mb-12 max-w-3xl mx-auto text-center">
+          Here is a collection of all my projects, showcasing my skills in various technologies.
+        </p>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project, index) => (
+            <ProjectCard key={`project-${index}`} project={project} />
+          ))}
+        </div>
+      </main>
+    </div>
   );
 };
 
-export default Projects;
+export default AllProjectsPage;
