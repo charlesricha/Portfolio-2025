@@ -1,4 +1,6 @@
-import React from 'react';
+"use client";
+
+import React, { useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { projects } from '@/lib/constants';
@@ -7,37 +9,50 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription }
 import { Badge } from './ui/badge';
 import { Button } from './ui/button';
 import Section from './section';
+import { gsap } from 'gsap';
 
 const ProjectCard = ({ project }: { project: (typeof projects)[0] }) => {
+  const cardRef = useRef(null);
+
+  const handleMouseEnter = () => {
+    gsap.to(cardRef.current, { y: -10, scale: 1.03, duration: 0.3, ease: 'power1.out' });
+  };
+
+  const handleMouseLeave = () => {
+    gsap.to(cardRef.current, { y: 0, scale: 1, duration: 0.3, ease: 'power1.out' });
+  };
+
   return (
-    <Card className="flex flex-col h-full animate-in fade-in-0 zoom-in-95 duration-500">
-      <CardHeader>
-        <div className="relative w-full h-[230px] rounded-t-lg overflow-hidden">
-          <Image src={project.image} alt={project.name} layout="fill" objectFit="cover" data-ai-hint="application screenshot" />
-        </div>
-        <CardTitle className="mt-4 text-xl font-bold font-headline">{project.name}</CardTitle>
-        <CardDescription className="mt-2 text-foreground/80 h-24 overflow-hidden">{project.description}</CardDescription>
-      </CardHeader>
-      <CardContent className="flex-grow">
-        <div className="flex flex-wrap gap-2">
-          {project.tags.map((tag) => (
-            <Badge key={tag.name} variant="secondary">{tag.name}</Badge>
-          ))}
-        </div>
-      </CardContent>
-      <CardFooter className="flex justify-end gap-2">
-        <Button variant="outline" size="icon" asChild>
-          <a href={project.source_code_link} target="_blank" rel="noopener noreferrer">
-            <Github className="h-4 w-4" />
-          </a>
-        </Button>
-        <Button variant="default" size="icon" asChild>
-          <a href={project.live_demo_link} target="_blank" rel="noopener noreferrer">
-            <ExternalLink className="h-4 w-4" />
-          </a>
-        </Button>
-      </CardFooter>
-    </Card>
+    <div ref={cardRef} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+      <Card className="flex flex-col h-full">
+        <CardHeader>
+          <div className="relative w-full h-[230px] rounded-t-lg overflow-hidden">
+            <Image src={project.image} alt={project.name} layout="fill" objectFit="cover" data-ai-hint="application screenshot" />
+          </div>
+          <CardTitle className="mt-4 text-xl font-bold font-headline">{project.name}</CardTitle>
+          <CardDescription className="mt-2 text-foreground/80 h-24 overflow-hidden">{project.description}</CardDescription>
+        </CardHeader>
+        <CardContent className="flex-grow">
+          <div className="flex flex-wrap gap-2">
+            {project.tags.map((tag) => (
+              <Badge key={tag.name} variant="secondary">{tag.name}</Badge>
+            ))}
+          </div>
+        </CardContent>
+        <CardFooter className="flex justify-end gap-2">
+          <Button variant="outline" size="icon" asChild>
+            <a href={project.source_code_link} target="_blank" rel="noopener noreferrer">
+              <Github className="h-4 w-4" />
+            </a>
+          </Button>
+          <Button variant="default" size="icon" asChild>
+            <a href={project.live_demo_link} target="_blank" rel="noopener noreferrer">
+              <ExternalLink className="h-4 w-4" />
+            </a>
+          </Button>
+        </CardFooter>
+      </Card>
+    </div>
   );
 };
 
