@@ -22,8 +22,8 @@
     --muted: 0 0% 96.1%;
     --muted-foreground: 0 0% 45.1%;
 
-    --accent: 51 100% 50%; /* Gold: #FFD700 */
-    --accent-foreground: 274 100% 15%;
+    --accent: 274 82% 60%; /* A nice purple */
+    --accent-foreground: 0 0% 98%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
@@ -69,7 +69,7 @@
     --muted: 274 10% 20%;
     --muted-foreground: 0 0% 63.9%;
 
-    --accent: 51 100% 50%;
+    --accent: 274 82% 70%;
     --accent-foreground: 274 100% 10%;
 
     --destructive: 0 62.8% 30.6%;
