@@ -14,12 +14,12 @@ const Tech = () => {
        <h2 className="text-3xl md:text-5xl font-bold font-headline mb-12 text-center">
         Technologies
       </h2>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 justify-items-center max-w-4xl mx-auto">
+      <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-6 lg:grid-cols-6 gap-8 justify-items-center max-w-4xl mx-auto">
         {technologies.map((technology) => (
           <TooltipProvider key={technology.name}>
             <Tooltip>
               <TooltipTrigger asChild>
-                <div className="tech-card">
+                <div className="w-12 h-12 md:w-20 md:h-20 p-2 rounded-lg bg-card border border-transparent flex items-center justify-center transition-all duration-300 hover:border-primary hover:shadow-[0_0_15px_theme(colors.primary)]">
                   <technology.icon className="w-full h-full text-foreground" />
                 </div>
               </TooltipTrigger>
