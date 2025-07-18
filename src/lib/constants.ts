@@ -90,6 +90,45 @@ export const projects = [
     source_code_link: "https://github.com/",
     live_demo_link: "https://github.com/",
   },
+  {
+    name: "Social Media App",
+    description:
+      "A social networking application that allows users to connect with friends, share updates, and join communities based on their interests. Includes real-time chat functionality.",
+    tags: [
+      { name: "react native" },
+      { name: "firebase" },
+      { name: "redux" },
+    ],
+    image: "https://placehold.co/360x230.png",
+    source_code_link: "https://github.com/",
+    live_demo_link: "https://github.com/",
+  },
+  {
+    name: "Fitness Tracking App",
+    description:
+      "An application for tracking workouts, setting fitness goals, and monitoring progress. Integrates with wearable devices to sync activity data.",
+    tags: [
+      { name: "vue" },
+      { name: "node.js" },
+      { name: "postgresql" },
+    ],
+    image: "https://placehold.co/360x230.png",
+    source_code_link: "https://github.com/",
+    live_demo_link: "https://github.com/",
+  },
+  {
+    name: "Online Learning Platform",
+    description:
+      "An e-learning platform where instructors can create and sell courses, and students can enroll to learn new skills. Includes video streaming and quiz functionality.",
+    tags: [
+      { name: "django" },
+      { name: "react" },
+      { name: "aws s3" },
+    ],
+    image: "https://placehold.co/360x230.png",
+    source_code_link: "https://github.com/",
+    live_demo_link: "https://github.com/",
+  },
 ];
 
 export const skills = [
