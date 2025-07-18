@@ -11,7 +11,7 @@ const Hero = () => {
         </div>
 
         <div className="animate-in fade-in-0 slide-in-from-top-12 duration-1000">
-          <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl font-bold">
+          <h1 className="font-headline text-5xl md:text-6xl lg:text-7xl font-bold">
             Hi, I'm <span className="text-primary">Charles</span>
           </h1>
           <p className="mt-4 text-xl md:text-2xl lg:text-3xl max-w-3xl">
