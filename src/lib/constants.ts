@@ -1,4 +1,4 @@
-import { Code, Brush, Monitor, Server, Database, Github, Linkedin, Twitter } from 'lucide-react';
+import { Code, Brush, Monitor, Server, Database, Github, Linkedin, Twitter, GitMerge, Wind, Bot } from 'lucide-react';
 
 export const navLinks = [
   {
@@ -49,6 +49,58 @@ export const experiences = [
     ],
   },
 ];
+
+const technologies = [
+  {
+    name: "HTML 5",
+    icon: Code, // Placeholder, lucide doesn't have a specific HTML5 icon
+  },
+  {
+    name: "CSS 3",
+    icon: Code, // Placeholder, lucide doesn't have a specific CSS3 icon
+  },
+  {
+    name: "JavaScript",
+    icon: Code, // Placeholder
+  },
+  {
+    name: "TypeScript",
+    icon: Code, // Placeholder
+  },
+  {
+    name: "React JS",
+    icon: Code, // Placeholder for React logo
+  },
+  {
+    name: "Redux Toolkit",
+    icon: Code, // Placeholder
+  },
+  {
+    name: "Tailwind CSS",
+    icon: Wind,
+  },
+  {
+    name: "Node JS",
+    icon: Server,
+  },
+  {
+    name: "MongoDB",
+    icon: Database,
+  },
+  {
+    name: "git",
+    icon: GitMerge,
+  },
+  {
+    name: "figma",
+    icon: Brush,
+  },
+  {
+    name: "Genkit",
+    icon: Bot,
+  },
+];
+
 
 export const projects = [
   {
@@ -153,3 +205,5 @@ export const skills = [
     technologies: ['Figma', 'Sketch', 'Adobe XD', 'Prototyping', 'Wireframing']
   },
 ];
+
+export { technologies };
