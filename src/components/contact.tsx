@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import * as z from "zod";
 import { Button } from "@/components/ui/button";
 import {
   Form,
@@ -18,25 +17,16 @@ import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
 import Section from "./section";
+import { sendContactMessage } from "@/ai/flows/contact-flow";
+import { ContactFormInputSchema, type ContactFormInput } from "@/lib/types";
 
-const formSchema = z.object({
-  name: z.string().min(2, {
-    message: "Name must be at least 2 characters.",
-  }),
-  email: z.string().email({
-    message: "Please enter a valid email address.",
-  }),
-  message: z.string().min(10, {
-    message: "Message must be at least 10 characters.",
-  }),
-});
 
 const Contact = () => {
   const { toast } = useToast();
   const [loading, setLoading] = useState(false);
 
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
+  const form = useForm<ContactFormInput>({
+    resolver: zodResolver(ContactFormInputSchema),
     defaultValues: {
       name: "",
       email: "",
@@ -44,18 +34,28 @@ const Contact = () => {
     },
   });
 
-  const onSubmit = (values: z.infer<typeof formSchema>) => {
+  const onSubmit = async (values: ContactFormInput) => {
     setLoading(true);
-    console.log(values);
-    // Here you would typically send the form data to your backend
-    setTimeout(() => {
-      setLoading(false);
+    try {
+      const result = await sendContactMessage(values);
+      if (result.success) {
+        toast({
+          title: "Message Sent!",
+          description: result.message,
+        });
+        form.reset();
+      } else {
+        throw new Error(result.message);
+      }
+    } catch (error: any) {
       toast({
-        title: "Message Sent!",
-        description: "Thank you for reaching out. I'll get back to you soon.",
+        variant: "destructive",
+        title: "Uh oh! Something went wrong.",
+        description: error.message || "There was a problem with your request. Please try again.",
       });
-      form.reset();
-    }, 2000);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
