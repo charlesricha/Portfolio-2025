@@ -10,6 +10,10 @@ export const navLinks = [
     title: "Experience",
   },
   {
+    id: "tech",
+    title: "Technologies",
+  },
+  {
     id: "skills",
     title: "Skills",
   },
@@ -50,7 +54,7 @@ export const experiences = [
   },
 ];
 
-const technologies = [
+export const technologies = [
   {
     name: "HTML 5",
     icon: Code, // Placeholder, lucide doesn't have a specific HTML5 icon
@@ -205,5 +209,3 @@ export const skills = [
     technologies: ['Figma', 'Sketch', 'Adobe XD', 'Prototyping', 'Wireframing']
   },
 ];
-
-export { technologies };
