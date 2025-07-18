@@ -47,7 +47,7 @@ const contactFlow = ai.defineFlow(
             from: `"${input.name}" <${process.env.SMTP_FROM_EMAIL || input.email}>`,
             to: process.env.SMTP_TO_EMAIL,
             replyTo: input.email,
-            subject: `New message from ${input.name} via EtherealFolio`,
+            subject: `New message from ${input.name} via CharlesFolio`,
             text: input.message,
             html: `<p>You have a new message from <strong>${input.name}</strong> (${input.email}):</p><p>${input.message}</p>`,
         });

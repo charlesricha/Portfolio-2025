@@ -6,7 +6,7 @@ const Hero = () => {
     <Section id="hero" className="relative w-full h-screen mx-auto flex items-center justify-center text-center">
       <div className="animate-in fade-in-0 slide-in-from-top-12 duration-1000">
         <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl font-bold">
-          Hi, I'm <span className="text-primary">Ethereal</span>
+          Hi, I'm <span className="text-primary">Charles</span>
         </h1>
         <p className="mt-4 text-xl md:text-2xl lg:text-3xl max-w-3xl mx-auto">
           I develop captivating user interfaces, web applications, and everything in between.
