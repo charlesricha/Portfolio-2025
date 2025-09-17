@@ -49,30 +49,6 @@ export const experiences = [
       "Designed the UI/UX interface of the company website.",
     ],
   },
-  {
-    title: "React.js Developer",
-    company_name: "Starship Inc.",
-    icon: 'https://placehold.co/40x40.png',
-    date: "March 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full Stack Developer",
-    company_name: "Cosmo Solutions",
-    icon: 'https://placehold.co/40x40.png',
-    date: "Jan 2023 - Present",
-    points: [
-      "Designed and developed scalable full-stack applications using the MERN stack (MongoDB, Express.js, React, Node.js).",
-      "Architected and implemented RESTful APIs for seamless data communication between the front-end and back-end.",
-      "Managed database schemas and performed data migrations with MongoDB.",
-      "Deployed applications on cloud platforms like AWS and set up CI/CD pipelines.",
-    ],
-  },
 ];
 
 export const technologies = [
