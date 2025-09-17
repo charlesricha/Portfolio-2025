@@ -29,6 +29,27 @@ export const navLinks = [
 
 export const experiences = [
   {
+    title: "Graphic Designer",
+    company_name: "Napenda Creatives",
+    icon: 'https://placehold.co/40x40.png',
+    date: "Jan 2025 - Present",
+    points: [
+      "Creating visually appealing graphics for various media.",
+      "Collaborating with clients to understand their design needs.",
+      "Ensuring brand consistency across all visual assets.",
+    ],
+  },
+  {
+    title: "Software Engineering Intern",
+    company_name: "Ranmcotech fiber internet",
+    icon: 'https://placehold.co/40x40.png',
+    date: "May 2025 - Sep 2025",
+    points: [
+      "Worked with others to create an ISP billing system.",
+      "Designed the UI/UX interface of the company website.",
+    ],
+  },
+  {
     title: "React.js Developer",
     company_name: "Starship Inc.",
     icon: 'https://placehold.co/40x40.png',
