@@ -3,8 +3,8 @@ import Section from './section';
 
 const Hero = () => {
   return (
-    <Section id="hero" className="relative w-full h-screen mx-auto flex items-center pt-16 sm:pt-0">
-      <div className="max-w-7xl mx-auto text-center md:text-left">
+    <Section id="hero" className="relative w-full h-screen mx-auto flex items-center">
+      <div className="max-w-7xl mx-auto text-center md:text-left pt-16 md:pt-0">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="flex flex-row items-start gap-5 justify-center md:justify-start">
             <div className="flex flex-col justify-center items-center mt-5">
@@ -13,7 +13,7 @@ const Hero = () => {
             </div>
 
             <div className="animate-in fade-in-0 slide-in-from-top-12 duration-1000">
-              <h1 className="font-headline text-5xl md:text-6xl font-bold mt-16 md:mt-0">
+              <h1 className="font-headline text-5xl md:text-6xl font-bold">
                 Hi, I'm <span className="text-primary">Charles</span>
               </h1>
               <p className="mt-4 text-xl md:text-2xl max-w-xl">
