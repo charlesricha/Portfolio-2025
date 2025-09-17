@@ -3,7 +3,7 @@ import Section from './section';
 
 const Hero = () => {
   return (
-    <Section id="hero" className="relative w-full h-screen mx-auto flex items-center">
+    <Section id="hero" className="relative w-full h-screen mx-auto flex items-center pt-16 sm:pt-0">
       <div className="max-w-7xl mx-auto text-center md:text-left">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="flex flex-row items-start gap-5 justify-center md:justify-start">
