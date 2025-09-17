@@ -105,82 +105,56 @@ export const technologies = [
 
 export const projects = [
   {
-    name: "AI-Powered E-commerce Platform",
+    name: "Smart Learning Aid",
     description:
-      "A web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "An educational technology tool designed to support learners. This project showcases skills in building practical applications that solve real-world learning challenges.",
+    tags: [
+      { name: "edtech" },
+      { name: "react" },
+      { name: "nodejs" },
+    ],
+    image: "https://picsum.photos/seed/smart-learning/360/230",
+    source_code_link: "https://github.com/charlesricha",
+    live_demo_link: "https://github.com/charlesricha",
+  },
+  {
+    name: "XORA React Landing Page",
+    description:
+      "A modern, responsive landing page built with React. This project highlights strong front-end development skills, including UI/UX design, layout, and component-based architecture.",
     tags: [
       { name: "react" },
-      { name: "mongodb" },
+      { name: "frontend" },
       { name: "tailwind" },
     ],
-    image: "https://placehold.co/360x230.png",
-    source_code_link: "https://github.com/",
-    live_demo_link: "https://github.com/",
+    image: "https://picsum.photos/seed/xora-react/360/230",
+    source_code_link: "https://github.com/charlesricha",
+    live_demo_link: "https://github.com/charlesricha",
   },
   {
-    name: "Data Visualization Dashboard",
+    name: "Arduino UNO Bluetooth Robot Car",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated travel recommendations based on user preferences.",
+      "A hands-on hardware project combining electronics and programming. This robot car, controlled via Bluetooth, demonstrates skills in IoT, robotics, and embedded systems with Arduino.",
     tags: [
-      { name: "nextjs" },
-      { name: "supabase" },
-      { name: "css" },
+      { name: "arduino" },
+      { name: "iot" },
+      { name: "robotics" },
     ],
-    image: "https://placehold.co/360x230.png",
-    source_code_link: "https://github.com/",
-    live_demo_link: "https://github.com/",
+    image: "https://picsum.photos/seed/robot-car/360/230",
+    source_code_link: "https://github.com/charlesricha",
+    live_demo_link: "https://github.com/charlesricha",
   },
   {
-    name: "Project Management Tool",
+    name: "Traffic Light Arduino Simulation",
     description:
-      "A clone of the popular Trello board, allowing users to create boards, lists, and cards to organize their projects and tasks. Features drag-and-drop functionality.",
+      "A simulation of a traffic light system using Arduino. This project shows an understanding of hardware timing, logic, and system modeling, mirroring real-world traffic control behavior.",
     tags: [
-      { name: "react" },
-      { name: "firebase" },
-      { name: "scss" },
+      { name: "arduino" },
+      { name: "simulation" },
+      { name: "electronics" },
     ],
-    image: "https://placehold.co/360x230.png",
-    source_code_link: "https://github.com/",
-    live_demo_link: "https://github.com/",
-  },
-  {
-    name: "Social Media App",
-    description:
-      "A social networking application that allows users to connect with friends, share updates, and join communities based on their interests. Includes real-time chat functionality.",
-    tags: [
-      { name: "react native" },
-      { name: "firebase" },
-      { name: "redux" },
-    ],
-    image: "https://placehold.co/360x230.png",
-    source_code_link: "https://github.com/",
-    live_demo_link: "https://github.com/",
-  },
-  {
-    name: "Fitness Tracking App",
-    description:
-      "An application for tracking workouts, setting fitness goals, and monitoring progress. Integrates with wearable devices to sync activity data.",
-    tags: [
-      { name: "vue" },
-      { name: "node.js" },
-      { name: "postgresql" },
-    ],
-    image: "https://placehold.co/360x230.png",
-    source_code_link: "https://github.com/",
-    live_demo_link: "https://github.com/",
-  },
-  {
-    name: "Online Learning Platform",
-    description:
-      "An e-learning platform where instructors can create and sell courses, and students can enroll to learn new skills. Includes video streaming and quiz functionality.",
-    tags: [
-      { name: "django" },
-      { name: "react" },
-      { name: "aws s3" },
-    ],
-    image: "https://placehold.co/360x230.png",
-    source_code_link: "https://github.com/",
-    live_demo_link: "https://github.com/",
+    image: "https://picsum.photos/seed/traffic-light/360/230",
+    source_code_link: "https://github.com/charlesricha",
+    live_demo_link: "https://github.com/charlesricha",
   },
 ];
 
