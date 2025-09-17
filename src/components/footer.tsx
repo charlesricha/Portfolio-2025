@@ -9,12 +9,12 @@ const Footer = () => {
         <p>&copy; {new Date().getFullYear()} Charles. All rights reserved.</p>
         <div className="flex gap-2">
           <Button variant="ghost" size="icon" asChild>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="Github">
+            <a href="https://github.com/charlesricha" target="_blank" rel="noopener noreferrer" aria-label="Github">
               <Github />
             </a>
           </Button>
           <Button variant="ghost" size="icon" asChild>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/muthui-charles/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <Linkedin />
             </a>
           </Button>
