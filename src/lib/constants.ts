@@ -179,4 +179,9 @@ export const skills = [
     icon: Brush,
     technologies: ['Figma', 'Sketch', 'Adobe XD', 'Prototyping', 'Wireframing']
   },
+  {
+    name: 'IoT & Robotics',
+    icon: Bot,
+    technologies: ['Arduino', 'Raspberry Pi', 'Sensors', 'Actuators', 'Embedded Systems']
+  },
 ];
