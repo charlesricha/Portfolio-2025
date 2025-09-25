@@ -25,8 +25,8 @@ const Hero = () => {
         
         <div className="relative w-full h-full min-h-[300px] md:min-h-0 flex items-center justify-center">
             <Image 
-              src={heroImage.heroCard.src} 
-              alt="Charles Muthui" 
+              src="/charles.png"
+              alt="Charles Muthui image" 
               width={heroImage.heroCard.width} 
               height={heroImage.heroCard.height} 
               data-ai-hint={heroImage.heroCard.hint}

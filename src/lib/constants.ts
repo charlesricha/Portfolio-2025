@@ -31,7 +31,7 @@ export const experiences = [
   {
     title: "Graphic Designer",
     company_name: "Napenda Creatives",
-    icon: 'https://placehold.co/40x40.png',
+    icon: '/napenda.png',
     date: "Jan 2025 - Present",
     points: [
       "Creating visually appealing graphics for various media.",
@@ -42,7 +42,7 @@ export const experiences = [
   {
     title: "Software Engineering Intern",
     company_name: "Ranmcotech fiber internet",
-    icon: 'https://placehold.co/40x40.png',
+    icon: '/Ranmcotech Distributors.jpg',
     date: "May 2025 - Sep 2025",
     points: [
       "Worked with others to create an ISP billing system.",
@@ -54,51 +54,51 @@ export const experiences = [
 export const technologies = [
   {
     name: "HTML 5",
-    icon: Code, // Placeholder, lucide doesn't have a specific HTML5 icon
+    icon: "/HTML5.png", // Placeholder, lucide doesn't have a specific HTML5 icon
   },
   {
     name: "CSS 3",
-    icon: Code, // Placeholder, lucide doesn't have a specific CSS3 icon
+    icon: "/CSS3.png", // Placeholder, lucide doesn't have a specific CSS3 icon
   },
   {
     name: "JavaScript",
-    icon: Code, // Placeholder
+    icon: "/JavaScript.png", // Placeholder
   },
   {
     name: "TypeScript",
-    icon: Code, // Placeholder
+    icon: "/TypeScript.png", // Placeholder
   },
   {
     name: "React JS",
-    icon: Code, // Placeholder for React logo
+    icon: "/React.png", // Placeholder for React logo
   },
   {
-    name: "Redux Toolkit",
-    icon: Code, // Placeholder
+    name: "Three JS",
+    icon: "/Three.js.png", // Placeholder
   },
   {
     name: "Tailwind CSS",
-    icon: Wind,
+    icon: "/Tailwind CSS.png", // Placeholder
   },
   {
     name: "Node JS",
-    icon: Server,
+    icon: "/Node.js.png",
   },
   {
     name: "MongoDB",
-    icon: Database,
+    icon: "/MongoDB.png", 
   },
   {
     name: "git",
-    icon: GitMerge,
+    icon: "/Git.png",
   },
   {
     name: "figma",
-    icon: Brush,
+    icon: "/Figma.png",
   },
   {
-    name: "Genkit",
-    icon: Bot,
+    name: "Next JS",
+    icon: "/Nextjs.png",
   },
 ];
 
