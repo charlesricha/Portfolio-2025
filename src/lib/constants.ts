@@ -1,4 +1,4 @@
-import { Code, Brush, Monitor, Server, Database, Github, Linkedin, Twitter, GitMerge, Wind, Bot } from 'lucide-react';
+import { Brush, Monitor, Server, Database, Github, Linkedin, Twitter, GitMerge, Wind, Bot,network } from 'lucide-react';
 
 export const navLinks = [
   {
@@ -162,7 +162,7 @@ export const skills = [
   {
     name: 'Frontend',
     icon: Monitor,
-    technologies: ['React', 'Next.js', 'Vue', 'Tailwind CSS', 'HTML5', 'CSS3']
+    technologies: ['React', 'Next.js', 'Vue', 'Tailwind CSS', 'HTML5', 'CSS3', 'Three.js']
   },
   {
     name: 'Backend',
@@ -183,5 +183,10 @@ export const skills = [
     name: 'IoT & Robotics',
     icon: Bot,
     technologies: ['Arduino', 'Raspberry Pi', 'Sensors', 'Actuators', 'Embedded Systems']
+  },
+   {
+    name: 'Network Engineering',
+    icon: network,
+    technologies: ['fiber splicing','cable management','network troubleshooting','customer support','network configuration']
   },
 ];
