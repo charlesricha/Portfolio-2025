@@ -186,7 +186,7 @@ export const skills = [
   },
    {
     name: 'Network Engineering',
-    icon: network,
+    icon: Wind,
     technologies: ['fiber splicing','cable management','network troubleshooting','customer support','network configuration']
   },
 ];
