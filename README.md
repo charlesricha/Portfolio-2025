@@ -49,9 +49,9 @@ This repository showcases my journey and projects across **IoT**, **Web Developm
 ---
 
 ## 📫 Contact
-- **GitHub:** [your-username](https://github.com/charlesricha)  
+- **GitHub:** [View my Github](https://github.com/charlesricha)  
 - **Email:** charlesmuthui206@gmail.com  
-- **LinkedIn:** [Your LinkedIn Profile](https://linkedin.com/in/muthuicharles)  
+- **LinkedIn:** [LinkedIn profile](https://linkedin.com/in/muthuicharles)  
 
 ---
 
