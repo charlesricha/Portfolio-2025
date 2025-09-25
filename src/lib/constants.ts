@@ -1,4 +1,4 @@
-import { Brush, Monitor, Server, Database, Github, Linkedin, Twitter, GitMerge, Wind, Bot,network } from 'lucide-react';
+import { Brush, Monitor, Server, Database, Github, Linkedin, Twitter, GitMerge, Wind, Bot } from 'lucide-react';
 
 export const navLinks = [
   {
