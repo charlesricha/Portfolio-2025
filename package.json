@@ -58,7 +58,6 @@
     "zod": "^3.24.2"
   },
   "devDependencies": {
-    "@genkit-ai/firebase": "^1.20.0",
     "@opentelemetry/exporter-jaeger": "^2.1.0",
     "@types/node": "^20",
     "@types/nodemailer": "^6.4.15",
