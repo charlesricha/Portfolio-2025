@@ -113,7 +113,7 @@ export const projects = [
       { name: "Nextjs" },
       { name: "Tailwindcss" },
     ],
-    image: "/projects/Brainburst",
+    image: "/projects/Brainburst.PNG",
     source_code_link: "https://github.com/charlesricha",
     live_demo_link: "https://github.com/charlesricha",
   },
