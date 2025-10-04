@@ -19,9 +19,17 @@ const Tech = () => {
           <TooltipProvider key={technology.name}>
             <Tooltip>
               <TooltipTrigger asChild>
-                <div className="w-12 h-12 md:w-20 md:h-20 p-2 rounded-lg bg-card border border-transparent flex items-center justify-center transition-all duration-300 hover:border-primary hover:shadow-[0_0_15px_theme(colors.primary)]">
-                  <technology.icon className="w-full h-full text-foreground" />
-                </div>
+               <div className="w-12 h-12 md:w-20 md:h-20 p-2 rounded-lg bg-card border border-transparent flex items-center justify-center transition-all duration-300 hover:border-primary hover:shadow-[0_0_15px_theme(colors.primary)]">
+  {technology.icon && (
+    <Image 
+      src={technology.icon} 
+      alt={technology.name} 
+      width={64} 
+      height={64} 
+      className="w-full h-full object-contain"
+    />
+  )}
+</div>
               </TooltipTrigger>
               <TooltipContent>
                 <p>{technology.name}</p>
