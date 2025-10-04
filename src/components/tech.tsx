@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from "next/image";
 import { technologies } from '@/lib/constants';
 import {
   Tooltip,
