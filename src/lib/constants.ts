@@ -54,7 +54,7 @@ export const experiences = [
 export const technologies = [
   {
     name: "HTML 5",
-    icon: "/HTML5.png", // Placeholder, lucide doesn't have a specific HTML5 icon
+    //icon: "/HTML5.png", // Placeholder, lucide doesn't have a specific HTML5 icon
   },
   {
     name: "CSS 3",
