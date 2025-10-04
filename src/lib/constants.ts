@@ -105,30 +105,31 @@ export const technologies = [
 
 export const projects = [
   {
-    name: "Smart Learning Aid",
+    name: "Brain Burst",
     description:
-      "An educational technology tool designed to support learners. This project showcases skills in building practical applications that solve real-world learning challenges.",
+      "An educational technology tool designed to support learners. This project showcases skills in building practical applications that solve real-world learning challenges.Involves insite games to avoid boredom.Build on a code Kesha with my team mates.",
     tags: [
       { name: "edtech" },
-      { name: "react" },
-      { name: "nodejs" },
+      { name: "Nextjs" },
+      { name: "Tailwindcss" },
     ],
-    image: "https://picsum.photos/seed/smart-learning/360/230",
+    image: "/projects/Brainburst",
     source_code_link: "https://github.com/charlesricha",
     live_demo_link: "https://github.com/charlesricha",
   },
   {
-    name: "XORA React Landing Page",
+    name: "Kuza Kenya",
     description:
-      "A modern, responsive landing page built with React. This project highlights strong front-end development skills, including UI/UX design, layout, and component-based architecture.",
+      "A modern, responsive website built by nextjs. The website allow locals to take pictures of damages(eg.potholes,rubbish etc) in their location share it so that the leaders can work on them. Bridging the gap between leaders and citizens",
     tags: [
-      { name: "react" },
+      { name: "nextjs" },
       { name: "frontend" },
       { name: "tailwind" },
+      { name: "AI Bot" },
     ],
-    image: "https://picsum.photos/seed/xora-react/360/230",
-    source_code_link: "https://github.com/charlesricha",
-    live_demo_link: "https://github.com/charlesricha",
+    image: "/projects/KuzaKenya.PNG",
+    source_code_link: "https://github.com/charlesricha/Kuza-Kenya",
+    live_demo_link: "https://kuza-kenya-xsmw.vercel.app/",
   },
   {
     name: "Arduino UNO Bluetooth Robot Car",
@@ -136,12 +137,39 @@ export const projects = [
       "A hands-on hardware project combining electronics and programming. This robot car, controlled via Bluetooth, demonstrates skills in IoT, robotics, and embedded systems with Arduino.",
     tags: [
       { name: "arduino" },
-      { name: "iot" },
+      { name: "IoT" },
       { name: "robotics" },
     ],
-    image: "https://picsum.photos/seed/robot-car/360/230",
+    image: "/projects/Arduino uno car.jpg",
     source_code_link: "https://github.com/charlesricha",
     live_demo_link: "https://github.com/charlesricha",
+  },
+  
+  {
+    name: "CryptoBot",
+    description:
+      "A bot that informs you about different crypto coins trends. Project built for PLP assignment",
+    tags: [
+      { name: "Django" },
+      { name: "MySql" },
+      { name: "AI and ML" },
+    ],
+    image: "/projects/CryptoBot.PNG",
+    source_code_link: "https://github.com/charlesricha/CryptoBot",
+    live_demo_link: "https://cryptobot-3.onrender.com/",
+  },
+   {
+    name: "VR Hub",
+    description:
+      "A simulation of a web ecommerce site that deals with selling Virtual Reality Products.",
+    tags: [
+      { name: "Tailwindcss" },
+      { name: "React Js" },
+      { name: "e-commerce" },
+    ],
+    image: "projects/VR hub.PNG",
+    source_code_link: "https://github.com/charlesricha/VR-Hub-React",
+    live_demo_link: "https://vr-hub-one.vercel.app/",
   },
   {
     name: "Traffic Light Arduino Simulation",
@@ -156,6 +184,9 @@ export const projects = [
     source_code_link: "https://github.com/charlesricha",
     live_demo_link: "https://github.com/charlesricha",
   },
+
+  
+
 ];
 
 export const skills = [
@@ -187,6 +218,6 @@ export const skills = [
    {
     name: 'Network Engineering',
     icon: Wind,
-    technologies: ['fiber splicing','cable management','network troubleshooting','customer support','network configuration']
+    technologies: ['Fiber splicing','Cable management','Network troubleshooting','Customer support','Network configuration']
   },
 ];
